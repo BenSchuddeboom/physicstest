@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: lightgrey
+}
+
+#container {
+    margin: 100px auto;
+    width: 800px;
+    height: 600px;
+    border: 2px solid black;
+}
+
+#gameCanvas {
+    background: white;
+}
