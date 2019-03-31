@@ -73,9 +73,6 @@ function createBullet() {
     const bullet = new Bullet(50, 50)
     activeBullets.push(bullet)
     console.log(activeBullets)
-    if(activeBullets.length > 5) {
-        activeBullets.shift()
-    }
 
 }
 
@@ -121,7 +118,7 @@ function loop() {
     } else if(keyPress.space && !cube.firing) {
         cube.firing = true;
         createBullet()
-        setTimeout(() => cube.firing = false, 500)
+        setTimeout(() => cube.firing = false, 10)
     }
 
     //updating velocity     
